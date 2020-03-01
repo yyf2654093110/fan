@@ -35,7 +35,182 @@
     font-size: 17px;
     margin: 4px 2px;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s; /* Safari */<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>html</title>
+<!--style-- type="text/css">
+body {background-color:rgba(230, 238, 238, 0.918)}
+p {color:rgb(255, 0, 55)}
+</!--style-->
+</head>
+<body>
+<h1 style="font-family: 宋体;text-align: center;">我的第一个标题</h1>
+<hr>
+<p>我的第一个段落<br/>
+<font size="6">哈哈哈哈</font>
+<div id="container" style="width:500px">
+
+    <div id="header" style="background-color:#FFA500;">
+    <h1 style="margin-bottom:0;">主要的网页标题</h1></div>
+    
+    <div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+    <b>菜单</b><br>
+    HTML<br>
+    CSS<br>
+    JavaScript</div>
+    
+    <div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+    内容在这里</div>
+    
+    <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+    版权 © runoob.com</div>
+    
+    </div>
+<strong>这个文本是加粗的</strong><br/>
+<big style="color: blue;">这个文本是放大的</big><br/>
+<small>这个文本是缩小的</small><br/>
+<em>这个文本是斜体的</em><br/>
+这个文本有<sup>上标</sup><br/>
+这个文本有<sub>下标</sub><br/>
+<del>删除字效果</del><br/>
+<ins>插入字效果</ins><br/>
+<abbr title="true" style="text-decoration:none">缩写</abbr><br/>
+<a href="https://www.dotcpp.com/" target="_blank" style="text-decoration:none;margin-left:100px">c语言网</a>
+<p>如果你将 target 属性设置为 &quot;_blank&quot;, 链接将在新窗口打开</p>
+<pre>
+<strong><big>实例演示如何使用 pre 标签
+对空行和    空格
+进行控制</big></strong>
+</pre>
+<address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+<font size="6">哈哈哈哈</font>
+<hr></p>
+<p><bdo dir="rtl">这个段落的文字由右到左</bdo><br/><bdo dir="ltr">"rtl"=right to left</bdo></p>
+<p><a href="https://www.baidu.com/" targat="_blank"><img border="0" src="timg.jpg" alt="百度" width="100" height="50"></a></p><!--border边框-->
+<table border="1">
+    <caption>表格标题</caption>
+<tr>
+    <th>100</th>
+    <td>200</td>
+</tr>
+<tr>
+    <th>300</th>
+    <td>400</td>
+</tr>
+<tr>
+    <th>500</th>
+    <td>600</td>
+</tr>
+</table><br/>
+<table border="1" cellpadding="20">
+    <caption>表格标题</caption>
+    <tr>
+        <th>100</th>
+        <th colspan="2">200</th>
+    </tr>
+    <tr>
+        <th>300</th>
+        <th>400</th>
+        <th>500</th>
+    </tr>
+</table>
+<ul style="list-style-type: disc;">
+    <li>无序列表一</li>
+    <li>无序列表二</li>
+</ul>
+<ol type="A">
+    <li>有序列表一</li>
+    <li>有序列表二</li>
+</ol>
+<dl>
+    <dt>自定义标题一</dt>
+    <dd>-自定义列表一</dd>
+    <dt>自定义标题二</dt>
+    <dd>-自定义列表二</dd>
+</dl>
+<h4>嵌套列表:</h4>
+<ul>
+    <li>Coffee</li>
+    <li>Tea
+        <ul>
+            <li>Black tea</li>
+            <li>Green tea</li>
+        </ul>
+    </li>
+    <li>Milk</li>
+</ul>
+<form action="">
+    <input type="radio" name="sex" value="male">male<br/>
+    <input type="radio" name="sex" value="female">female
+</form>
+<form action="">
+    <input type="checkbox" value="one">i have a bike<br/>
+    <input type="checkbox" value="two" checked="checked">i have a car
+</form>
+<form action="">
+    <select name="car">
+        <option value="volvo">volvo</option>
+        <option value="saab">saab</option>
+        <option value="fiat" selected>fiat</option>
+        <option value="audi">audi</option>    
+    </select>
+</form>
+<textarea cols="20" rows="10"></textarea>
+<form>
+    <input type="button" value="hellohtml!">
+</form>
+<form>
+    <fieldset style="border-radius:20px;width: 200px;height: 90px;">
+        <legend>登录系统</legend>
+        账号：<input type="text" size="10"><br/>
+        密码：<input type="password" size="10"><br/>
+        <input type="button" value="登录">
+        <input type="reset" value="重置">
+        <input type="button" value="注册">
+    </fieldset>
+</form>
+<iframe src="demo_iframe.htm" name="iframe" width="1000" height="500"></iframe>
+<p><a href="http://www.runoob.com" target="iframe">runoob</a></p>
+<script>
+document.write("hello world")
+document.write("<h1>这是一个由script输出的标题</h1>")
+</script>
+<h1>我的第一个javascript</h1>
+<p id="yyf">javascript可以触发事件就像按钮点击</p>
+<script>
+function myfunction()
+{
+    document.getElementById("yyf").innerHTML="helloscript";
+}
+function myfunction2()
+{
+    document.getElementById("yyf").style.color="#ff0000";
+}
+</script>
+<button type="button" onclick="myfunction()">转换</button>
+<button type="button" onclick="myfunction2()">转颜色</button>
+</body>
+<p>速度：<meter value="150" min="0" max="250" low="0" high="160">120</meter>km</p>
+<!--标签定义已知范围或分数值内的标量测量。也被称为 gauge（尺度）
+    例子：磁盘用量、查询结果的相关性，等等-->
+<p>剩余油量：<progress value="22" max="100"></progress></p>
+<p><b>注释：</b>Internet Explorer 9 以及更早的版本不支持标签<progress></progress> </p>
+<!--<progress> 标签定义运行中的进度（进程）
+    可以使用 <progress> 标签来显示 JavaScript 中耗费时间的函数的进度-->
+<details>
+<summary>Copyright 1999-2011.</summary>
+<p> - by Refsnes Data. All Rights Reserved.</p>
+<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>
+</html>
     transition-duration: 0.4s;
 }
 .button:hover {

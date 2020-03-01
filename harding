@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+<style>
+	#lname:focus {
+  background-color: lightblue;
+  width: 65%;
+}
+	#lname {
+  width: 40%;
+  height: 55px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+  background-image: url('https://static.runoob.com/images/mix/searchicon.png');
+  background-position: 16px 16px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;/*输入框带动画*/
+  transition: width 0.4s ease-in-out;
+}
+	.button {
+    background-color: #F10B0E; /* Green */
+    border: none;
+    color: #E9E9E9;
+	border-radius:15px;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button:hover {
+    box-shadow: 0px 5px 30px red;
+}
+#denlu{
+		margin:-5px 60px 20px 1000px;
+	}
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+ 
+/* 头部标题 */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    font-family: Arial;
+}
+ 
+.header h1 {
+  font-size: 50px;
+}
+ 
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+ 
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+/* 链接颜色修改 */
+.topnav a:hover {
+    background-color:#B90727;
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+ 
+/* 创建两列 */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+ 
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+ 
+/* 图像部分 */
+.fakeimg1 {
+  background-image:url("QQ图片20200223145832.png");
+  width: 100%;
+  padding: 20px;
+}
+	.fakeimg2 {
+  background-image:url("QQ图片20200223150721.png");
+  width: 100%;
+  padding: 20px;
+}
+ 
+/* 文章卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+ 
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 底部 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+ 
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header" style="background-image:url(grill_mesh_fence_161058_1400x1050.jpg)">
+	<form>
+     <input type="text" id="lname" name="lname" placeholder="搜索..">
+  </form>
+
+	<form id="denlu">
+    <fieldset style="border-radius: 20px; width: 275px; height: 135px; text-align: center; color: #DF0416; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-style: italic;">
+        <legend><big>登录系统</big></legend>
+        <big>账号：</big><input type="text" size="17"><br/>
+        <big>密码：</big><input type="password" size="17"><br/>
+	     <button class="button">登录</button>
+        <button class="button">重置</button>
+		<button class="button">注册</button>
+    </fieldset>
+</form>
+  <h3>我的网页</h3>
+</div>
+
+<div class="topnav">
+  <a href="#">链接</a>
+  <a href="#">链接</a>
+  <a href="#">链接</a>
+  <a href="#" style="float:right">链接</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card" style="background-color:#7E54EA;">
+      <h2>文章标题</h2>
+      <h5>2019 年 4 月 17日</h5>
+      <div class="fakeimg1" style="width:1023px; height:200px;">
+    图片</div>
+      <p>一些文本...</p>
+      <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+    </div>
+    <div class="card" style="background-color: #EB5570;">
+      <h2>文章标题</h2>
+      <h5>2019 年 4 月 17日</h5>
+      <div class="fakeimg2" style="width:1023px; height:200px;">图片</div>
+      <p>一些文本...</p>
+      <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card" style="background-color: #6EEA98;">
+      <h2>关于我</h2>
+      <div class="fakeimg" style="height:100px;">图片</div>
+      <p>关于我的一些信息..</p>
+    </div>
+    <div class="card" style="background-color: #6EEA98;">
+      <h3>热门文章</h3>
+      <div class="fakeimg"><p>图片</p></div>
+      <div class="fakeimg"><p>图片</p></div>
+      <div class="fakeimg">
+        <p>图片</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="card" style="background-color: #6EEA98;">
+      <h3>关注我</h3><br/>
+      <p>一些文本</p>
+    </div>
+  </div>
+</div>
+<div class="footer" style="background-color: #E3EB81;"><h2>底部区域</h2></div>
+</body>
+</html>
